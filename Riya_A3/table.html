@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<!-- Also read chapter 9 from slides - Regular Expressions -->
+
+<html>
+<head>
+	<title>Table CheckList</title>
+	<link rel="stylesheet" type="text/css" href="table.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
+</head>
+<body>
+	<div class="header">
+		<h1>Name: - NUID: </h1>
+	</div>
+	<table id="myTable">
+		<thead>
+
+		<tr>
+			<th></th>
+			<th>STUDENT</th>
+			<th>ADVISOR</th>
+			<th>AWARD<br/>STATUS</th>
+			<th>SEMESTER</th>
+			<th>TYPE</th>
+			<th>BUDGET<br />#</th>
+			<th>PERCENTAGE</th>
+		</tr>
+		</thead>
+
+		<tbody>
+		<tr>
+			<td><input type="checkbox" onclick="onClickCheckBox(this)" /><br /><br /><img src="down.png" id="expandButton"width="25px"  onclick= "onExpand(this)" /></td>
+			<td>Student 1</td>
+			<td>Teacher 1</td>
+			<td>Approved</td>
+			<td>Fall</td>
+			<td>TA</td>
+			<td>12345</td>
+			<td>100%</td>
+			<!-- <td><button>Delete</button></td>
+			<td><button>Edit</button></td> -->
+		</tr>
+		<tr class="dropDownTextArea invisible"><td colspan="8">
+			Advisor:<br /><br />
+			Award Details<br />
+			Summer 1-2014(TA)<br />
+			Budget Number: <br />
+			Tuition Number: <br />
+			Comments:<br /><br /><br />
+			Award Status:<br /><br /><br />
+		</td></tr>
+		<tr>
+			<td><input type="checkbox"onclick="onClickCheckBox(this)"/><br /><br /><img src="down.png" id="expandButton"width="25px"  onclick= "onExpand(this)" /></td>
+			<td>Student 2</td>
+			<td>Teacher 2</td>
+			<td>Approved</td>
+			<td>Fall</td>
+			<td>TA</td>
+			<td>23456</td>
+			<td>100%</td>
+			<!-- <td><button>Delete</button></td>
+			<td><button>Edit</button></td> -->
+		</tr>
+		<tr class="dropDownTextArea invisible"><td colspan="8">
+			Advisor:<br /><br />
+			Award Details<br />
+			Summer 1-2014(TA)<br />
+			Budget Number: <br />
+			Tuition Number: <br />
+			Comments:<br /><br /><br />
+			Award Status:<br /><br /><br />
+		</td></tr>
+		<tr>
+			<td><input type="checkbox" onclick="onClickCheckBox(this)" /><br /><br /><img src="down.png" id="expandButton"width="25px"  onclick= "onExpand(this)"/></td>
+			<td>Student 3</td>
+			<td>Teacher 3</td>
+			<td>Approved</td>
+			<td>Fall</td>
+			<td>TA</td>
+			<td>34567</td>
+			<td>100%</td>
+
+		</tr>
+		<tr class="dropDownTextArea invisible"><td colspan="8">
+			Advisor:<br /><br />
+			Award Details<br />
+			Summer 1-2014(TA)<br />
+			Budget Number: <br />
+			Tuition Number: <br />
+			Comments:<br /><br /><br />
+			Award Status:<br /><br /><br />
+		</td></tr>
+		</tbody>
+	</table>
+
+	<br /><br />
+	
+	<button id="button" disabled> SUBMIT SELECTED AWARDS</button>
+	<button id="add" onclick="addRecord()">Add New Student </button>
+
+	<nav class="socialmediaicons"></nav>
+	
+	
+</body>
+</html>

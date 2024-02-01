@@ -1,0 +1,38 @@
+#myTable input {
+	margin-left: 5px;
+}
+
+#myTable {
+	border:2px solid green;
+	border-collapse: collapse;
+	margin: 30px 30px 20px 40px;
+}
+#myTable td, th {
+	border:1px solid green;
+	padding: 5px;
+}
+#myTable th {
+	color: #fff;
+	background-color: #a7c942;
+}
+#button {
+	color: white;
+	background-color: orange;
+	margin-left: 180px; 
+}
+#add{
+	color: #a7c942;
+	background-color: rgb(255, 255, 255);
+	font-weight: bold;
+	
+}
+
+.invisible {
+	display: none;
+}
+
+#button[disabled]
+{
+
+	background: gray;
+}
